@@ -147,7 +147,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/09/nodjs-pre-01/">nodejs记录，起步</a>
+      <a class="article-title" href="/2017/02/09/nodjs-pre-01/">hexo搭建过程</a>
     </h1>
   
 
@@ -156,6 +156,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>操作系统是win7。</p>
+<p>先安装nodejs</p>
 <ul>
 <li><p>step1：安装。现在的版本简单了。直接官网（国内可以去这个<a href="http://nodejs.cn）下载安装，一路next即可。" target="_blank" rel="external">http://nodejs.cn）下载安装，一路next即可。</a></p>
 </li>
@@ -165,6 +166,26 @@
 </li>
 </ul>
 <p>遇到的问题：<br>npm安装任何东西都失败。<br>解决办法：cmd使用管理员权限打开。</p>
+<p>然后安装hexo</p>
+<ul>
+<li>命令：cnpm install -g hexo  注意：-g是指全局安装hexo。</li>
+<li>安装完成后，在你准备文件夹下（如D:\Hexo），执行以下指令:hexo init。(在d:\Hexo内点击鼠标右键，选择Git Bash)，Hexo 即会自动在目标文件夹建立网站所需要的所有文件。</li>
+<li>进入上面创建的文件夹：hexo generate 生成。</li>
+<li>hexo server 可以打开本地服务。默认端口4000.如果端口被占可以换个端口。命令举例:hexo server -p 4001。</li>
+<li>这样打开 <a href="http://localhost:4001/" target="_blank" rel="external">http://localhost:4001/</a> 就能看到你本地博客搭建成功。</li>
+</ul>
+<p>创建GitHub仓库</p>
+<ul>
+<li>创建的时候注意Repository的名字。比如我的Github账号是hank123456，那么我应该创建的Repository的名字是：hank123456.github.io。</li>
+<li>然后配置，具体参考<a href="http://blog.csdn.net/xsckernel/article/details/8563993" target="_blank" rel="external"> git 使用（ssh key创建和github使用）</a> </li>
+</ul>
+<p>修改 Hexo 中的_config.yml 文件</p>
+<ul>
+<li>找到其中的 deploy 标签，改成下图所示形式，并保存。注意：冒号后面要加上一个空格，否则会报错。<br><code>deploy: type: git</code> <br><code>repo: git@github.com:你的名字/你的名字.github.io.git</code></li>
+<li>然后是这些命令:<br>hexo clean<br> hexo generate<br> hexo deploy</li>
+<li>如果报错则先：    npm install hexo-deployer-git –save 再执行前面命令</li>
+</ul>
+<p>到这一步，如果没有再报错，就能看到git将你public文件夹下的内容上传，个人博客就已经部署到 GitHub 上了。你可以到你的GitHub仓库查看是否已经更新。此时,通过yourUserName.github.io（即你那个仓库的名称，形如：”你的 GitHub 用户名”.github.io）,就可以看到你的个人博客了。</p>
 
       
     </div>
