@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'hexo-deployer-git',
+1 verbose cli   '–save' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData hexo-deployer-git
+8 silly fetchPackageMetaData –save
+9 silly fetchNamedPackageData hexo-deployer-git
+10 silly mapToRegistry name hexo-deployer-git
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry http://registry.cnpmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'hexo-deployer-git',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'hexo-deployer-git',
+13 silly mapToRegistry   name: 'hexo-deployer-git',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri http://registry.cnpmjs.org/hexo-deployer-git
+15 silly fetchOtherPackageData –save
+16 silly cache add args [ '–save', null ]
+17 verbose cache add spec –save
+18 verbose request uri http://registry.cnpmjs.org/hexo-deployer-git
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 12:22:43
+21 verbose request id f672e4d8ccc28281
+22 http request GET http://registry.cnpmjs.org/hexo-deployer-git
+23 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+24 silly cache add parsed spec Result {
+24 silly cache add   raw: '–save',
+24 silly cache add   scope: null,
+24 silly cache add   escapedName: null,
+24 silly cache add   name: null,
+24 silly cache add   rawSpec: '–save',
+24 silly cache add   spec: 'D:\\su\'coding\\blog\\blog\\source\\–save',
+24 silly cache add   type: 'local' }
+25 error addLocal Could not install D:\su'coding\blog\blog\source\–save
+26 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open 'D:\su'coding\blog\blog\source\–save'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData  error for –save { Error: ENOENT: no such file or directory, open 'D:\su'coding\blog\blog\source\–save'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData   errno: -4058,
+26 silly fetchPackageMetaData   code: 'ENOENT',
+26 silly fetchPackageMetaData   syscall: 'open',
+26 silly fetchPackageMetaData   path: 'D:\\su\'coding\\blog\\blog\\source\\–save' }
+27 verbose stack Error: kill ENOSYS
+27 verbose stack     at exports._errnoException (util.js:1022:11)
+27 verbose stack     at process.kill (internal/process.js:172:13)
+27 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+27 verbose stack     at emitNone (events.js:91:20)
+27 verbose stack     at process.emit (events.js:185:7)
+27 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+27 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+27 verbose stack     at Signal.wrap.onsignal (internal/process.js:199:44)
+28 verbose cwd D:\su'coding\blog\blog\source
+29 error Windows_NT 6.1.7601
+30 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "hexo-deployer-git" "–save"
+31 error node v6.9.5
+32 error npm  v3.10.10
+33 error code ENOSYS
+34 error errno ENOSYS
+35 error syscall kill
+36 error kill ENOSYS
+37 error If you need help, you may report this error at:
+37 error     <https://github.com/npm/npm/issues>
+38 verbose exit [ 1, true ]

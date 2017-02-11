@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>转行web前端开发STEP1：分析需求。 | 汉克酥</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="文 | hank
+引子：
+
+每天在公司干着已经重复了五年的工作，幻想了一下五年以后自己的样子，再看看已经在公司十年的老同事。离开现在状态的念头越来越重。虽然现在的薪水不能算很低，但是电信行业内跳槽除了华为真心不知道还能去哪。对于华为，其一自己不想去，其二就算想去，只能努力下现在一样的岗位，如果想做研发人家也不一定要。
+想想自己这些年来业余时间倒腾的事情，那些失败的网站，那些写了也没什么人看的文。转">
+<meta property="og:type" content="article">
+<meta property="og:title" content="转行web前端开发STEP1：分析需求。">
+<meta property="og:url" content="http://hank123456.github.io/2016/10/08/if-you-want-to-be-a-Front-end-engineer/index.html">
+<meta property="og:site_name" content="汉克酥">
+<meta property="og:description" content="文 | hank
+引子：
+
+每天在公司干着已经重复了五年的工作，幻想了一下五年以后自己的样子，再看看已经在公司十年的老同事。离开现在状态的念头越来越重。虽然现在的薪水不能算很低，但是电信行业内跳槽除了华为真心不知道还能去哪。对于华为，其一自己不想去，其二就算想去，只能努力下现在一样的岗位，如果想做研发人家也不一定要。
+想想自己这些年来业余时间倒腾的事情，那些失败的网站，那些写了也没什么人看的文。转">
+<meta property="og:updated_time" content="2016-10-08T15:19:37.378Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="转行web前端开发STEP1：分析需求。">
+<meta name="twitter:description" content="文 | hank
+引子：
+
+每天在公司干着已经重复了五年的工作，幻想了一下五年以后自己的样子，再看看已经在公司十年的老同事。离开现在状态的念头越来越重。虽然现在的薪水不能算很低，但是电信行业内跳槽除了华为真心不知道还能去哪。对于华为，其一自己不想去，其二就算想去，只能努力下现在一样的岗位，如果想做研发人家也不一定要。
+想想自己这些年来业余时间倒腾的事情，那些失败的网站，那些写了也没什么人看的文。转">
+  
+    <link rel="alternative" href="/atom.xml" title="汉克酥" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//assets/blogImg/favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/assets/blogImg/headshot.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Hank</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">做好事 吃好饭</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/instagram">相册</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Hank</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/assets/blogImg/headshot.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Hank</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">做好事 吃好饭</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/instagram">相册</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-if-you-want-to-be-a-Front-end-engineer" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      转行web前端开发STEP1：分析需求。
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>文 | hank</p>
+<p>引子：</p>
+<blockquote>
+<p>每天在公司干着已经重复了五年的工作，幻想了一下五年以后自己的样子，再看看已经在公司十年的老同事。离开现在状态的念头越来越重。虽然现在的薪水不能算很低，但是电信行业内跳槽除了华为真心不知道还能去哪。对于华为，其一自己不想去，其二就算想去，只能努力下现在一样的岗位，如果想做研发人家也不一定要。</p>
+<p>想想自己这些年来业余时间倒腾的事情，那些失败的网站，那些写了也没什么人看的文。转行吧！30岁不算老。</p>
+</blockquote>
+<p>既然决定了，那就一步步来吧。先分析下web前端开发需要什么技能！</p>
+<p>没有什么特别的方法，最简单直接粗暴的来：</p>
+<ol>
+<li>打开招聘网站。</li>
+<li>输入“web前端开发”</li>
+</ol>
+<p>然后开始选把。说说我是怎么选的：</p>
+<ul>
+<li>先看薪水5k，8k，10k，20k，30k的都有，看来只要成功入行超过10k就行，还是有很多选择的，生活开支也就能勉强维持，暗暗开心了一点点。</li>
+<li>然后优先挑选大公司的。这是我工作七八年来的经验，如果自己不是个大牛的情况下，不要去选择创业小公司。原因很简单，要不就是他们需要大牛不要你，要不就是要你了但是公司很不靠谱。</li>
+<li>然后看招聘要求。</li>
+</ul>
+<p>以下是我找到的要求，供看到本文的有缘人参考：</p>
+<h4 id="必备能力："><a href="#必备能力：" class="headerlink" title="必备能力："></a>必备能力：</h4><p>熟练掌握HTML/CSS/JavaScript。</p>
+<p>理解web标准，理解HTTP协议。</p>
+<p>熟练使用JQuery框架（或者别的）能与后台开发人员一起编写Ajax交互程序。</p>
+<h4 id="进阶能力："><a href="#进阶能力：" class="headerlink" title="进阶能力："></a>进阶能力：</h4><p>熟练使用至少一种前端框架，Vue, AngularJS, React。</p>
+<p>熟悉构建工具：Grunt, Gulp, Webpack, Browserify等。</p>
+<p>对前端模块，组件化开发有理解，了解CMD,AMD原理。</p>
+<h4 id="加分能力："><a href="#加分能力：" class="headerlink" title="加分能力："></a>加分能力：</h4><p>熟练使用git</p>
+<p>github带星星</p>
+<p>了解前端自动化测试</p>
+<p>好多内容，有些自己已经看书很久，并且稍有实践，但是大多数接触很少，想要“骗”到一份过万月薪并且有意思有发展的工作，任重道远啊！过十一点了，洗漱休息，明天继续。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/08/if-you-want-to-be-a-Front-end-engineer/" class="archive-article-date">
+  	<time datetime="2016-10-08T14:36:09.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-08</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/02/09/nodjs-pre-01/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          nodejs记录，起步
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/10/07/github-to-hanksu/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">github page搭建的博客，怎么绑定自己的域名</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="if-you-want-to-be-a-Front-end-engineer" data-title="转行web前端开发STEP1：分析需求。" data-url="http://hank123456.github.io/2016/10/08/if-you-want-to-be-a-Front-end-engineer/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"hanksu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 Hank
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/hexo建站/" style="font-size: 20px;">hexo建站</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/web前端/" style="font-size: 10px;">web前端</a> <a href="/tags/日常记忆/" style="font-size: 10px;">日常记忆</a>
+    			</div>
+    	</section>
+    
+
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">先转行&lt;br&gt;做个web前端开发&lt;br&gt;接着搞静物摄影和学ps</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
